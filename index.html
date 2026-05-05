@@ -108,6 +108,41 @@ a {
   box-shadow: 0 10px 28px rgba(15,23,42,0.08);
 }
 
+.image-section {
+  margin-bottom: 30px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.image-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.image-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  color: white;
+  font-weight: bold;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -223,7 +258,8 @@ footer {
     font-size: 36px;
   }
 
-  .grid {
+  .grid,
+  .image-grid {
     grid-template-columns: 1fr;
   }
 
@@ -282,6 +318,27 @@ footer {
 
 <div class="container">
 
+  <div class="image-section">
+    <h2 class="section-title">Где используется VPN</h2>
+
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Защита данных">
+        <div class="image-text">Защита данных</div>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Работа и интернет">
+        <div class="image-text">Работа и интернет</div>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80" alt="Телефон и приложения">
+        <div class="image-text">Телефон и приложения</div>
+      </div>
+    </div>
+  </div>
+
   <div class="info">
     <h2>Кратко о выборе VPN</h2>
     <p>
@@ -305,7 +362,6 @@ footer {
   <h2 class="section-title" id="rating">Рейтинг VPN</h2>
 
   <div class="grid">
-
     <div class="card">
       <span class="badge">Рекомендуем</span>
       <h2>VPN №1</h2>
@@ -344,7 +400,6 @@ footer {
       </ul>
       <a class="btn" href="#">Установить VPN</a>
     </div>
-
   </div>
 
   <div class="info" id="compare">
@@ -428,42 +483,3 @@ footer {
 
 </body>
 </html>
-.image-section {
-  margin-bottom: 30px;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.image-card {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.image-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.image-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 14px;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-  color: white;
-  font-weight: bold;
-}
-
-@media (max-width: 700px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
-}
