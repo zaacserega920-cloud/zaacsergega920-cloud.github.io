@@ -9,18 +9,20 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #0f172a;
-  color: white;
+  background: #f4f6fb;
+  color: #111;
 }
 
 header {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  padding: 50px 20px;
+  background: linear-gradient(135deg,#ff7a18,#ff3d3d);
+  color: white;
 }
 
 header h1 {
-  font-size: 40px;
+  margin: 0;
+  font-size: 38px;
 }
 
 .container {
@@ -30,57 +32,161 @@ header h1 {
 }
 
 .card {
-  background: #1e293b;
+  background: white;
   padding: 25px;
   border-radius: 15px;
   margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.rating {
+  color: orange;
+  font-weight: bold;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 20px;
-  background: #22c55e;
+  background: #ff3d3d;
   color: white;
   text-decoration: none;
   border-radius: 10px;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background: #16a34a;
+  background: #d92d2d;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.info {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
 <h1>Лучшие VPN 2026</h1>
-<p>Быстрые и надёжные VPN сервисы</p>
+<p>Обзор надёжных VPN сервисов для работы, защиты и доступа к сайтам</p>
 </header>
 
 <div class="container">
 
 <div class="card">
-<h2>VPN №1</h2>
-<p>Самый быстрый VPN для работы и просмотра сайтов</p>
+<h2>VPN №1 — Рекомендуем</h2>
+<p class="rating">★★★★★ 9.8/10</p>
+<p>Один из самых быстрых VPN с хорошей защитой данных и стабильной работой.</p>
+
+<ul>
+<li>✔ высокая скорость</li>
+<li>✔ подходит для всех устройств</li>
+<li>✔ стабильное подключение</li>
+</ul>
+
 <a class="btn" href="#">Скачать</a>
 </div>
 
 <div class="card">
-<h2>VPN №2</h2>
-<p>Бесплатный вариант для простого использования</p>
+<h2>VPN №2 — Бесплатный вариант</h2>
+<p class="rating">★★★★☆ 8.7/10</p>
+<p>Хороший вариант для простого использования без оплаты.</p>
+
+<ul>
+<li>✔ бесплатный тариф</li>
+<li>✔ простая установка</li>
+<li>✔ подходит для новичков</li>
+</ul>
+
 <a class="btn" href="#">Попробовать</a>
 </div>
 
 <div class="card">
-<h2>VPN №3</h2>
-<p>Отлично подходит для телефона</p>
+<h2>VPN №3 — Для телефона</h2>
+<p class="rating">★★★★☆ 8.5/10</p>
+<p>Удобный VPN для Android и iPhone.</p>
+
+<ul>
+<li>✔ быстрое подключение</li>
+<li>✔ простой интерфейс</li>
+<li>✔ работает стабильно</li>
+</ul>
+
 <a class="btn" href="#">Установить</a>
 </div>
 
+<div class="info">
+<h2>Сравнение VPN</h2>
+
+<table class="table">
+<tr>
+<th>VPN</th>
+<th>Скорость</th>
+<th>Цена</th>
+<th>Оценка</th>
+</tr>
+<tr>
+<td>VPN №1</td>
+<td>Очень высокая</td>
+<td>Платный</td>
+<td>9.8</td>
+</tr>
+<tr>
+<td>VPN №2</td>
+<td>Средняя</td>
+<td>Бесплатный</td>
+<td>8.7</td>
+</tr>
+<tr>
+<td>VPN №3</td>
+<td>Высокая</td>
+<td>Платный</td>
+<td>8.5</td>
+</tr>
+</table>
 </div>
+
+<div class="info">
+<h2>Что такое VPN?</h2>
+<p>VPN — это сервис, который защищает интернет-соединение и помогает получать доступ к сайтам. Он шифрует данные и скрывает IP-адрес пользователя.</p>
+</div>
+
+<div class="info">
+<h2>Важно</h2>
+<p>Этот сайт является информационным. Мы не предоставляем VPN услуги, а только делаем обзор сервисов.</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Информационный сайт о VPN
+</footer>
 
 </body>
 </html>
