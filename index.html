@@ -8,50 +8,59 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #f4f6fb;
-  color: #111;
+  color: #111827;
 }
 
 header {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg,#ff7a18,#ff3d3d);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ff7a18, #ff3d3d);
   color: white;
 }
 
 header h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 42px;
+}
+
+header p {
+  font-size: 18px;
 }
 
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: 30px 20px;
+}
+
+.info, .card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card {
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-left: 6px solid #ff3d3d;
 }
 
 .rating {
-  color: orange;
+  color: #ff9800;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 14px 24px;
   background: #ff3d3d;
   color: white;
   text-decoration: none;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 12px;
+  margin-top: 12px;
   font-weight: bold;
 }
 
@@ -60,31 +69,34 @@ header h1 {
 }
 
 ul {
-  padding-left: 20px;
+  line-height: 1.8;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.table th {
+  background: #ff3d3d;
+  color: white;
 }
 
 .table th, .table td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
 }
 
-.info {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  margin-top: 20px;
+.note {
+  font-size: 14px;
+  color: #555;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   color: #666;
 }
 </style>
@@ -93,97 +105,128 @@ footer {
 <body>
 
 <header>
-<h1>Лучшие VPN 2026</h1>
-<p>Обзор надёжных VPN сервисов для работы, защиты и доступа к сайтам</p>
+  <h1>Лучшие VPN 2026</h1>
+  <p>Обзор надёжных VPN-сервисов для работы, защиты и доступа к сайтам</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h2>VPN №1 — Рекомендуем</h2>
-<p class="rating">★★★★★ 9.8/10</p>
-<p>Один из самых быстрых VPN с хорошей защитой данных и стабильной работой.</p>
+  <div class="info">
+    <p>
+      В 2026 году VPN стал необходимостью: для работы, защиты данных и доступа к сайтам.
+      Мы собрали популярные варианты и сравнили их по скорости, стабильности, удобству и поддержке устройств.
+    </p>
+  </div>
 
-<ul>
-<li>✔ высокая скорость</li>
-<li>✔ подходит для всех устройств</li>
-<li>✔ стабильное подключение</li>
-</ul>
+  <div class="info">
+    <h2>Как мы выбирали VPN</h2>
+    <ul>
+      <li>Скорость подключения</li>
+      <li>Стабильность работы</li>
+      <li>Простота установки</li>
+      <li>Поддержка Android, iPhone и Windows</li>
+      <li>Наличие бесплатного или пробного тарифа</li>
+    </ul>
+  </div>
 
-<a class="btn" href="#">Скачать</a>
+  <div class="card">
+    <h2>VPN №1 — Рекомендуем</h2>
+    <p class="rating">★★★★★ 9.8/10</p>
+    <p>Быстрый VPN для работы, просмотра сайтов и защиты соединения. Подходит для телефона и компьютера.</p>
+    <ul>
+      <li>✔ высокая скорость</li>
+      <li>✔ подходит для всех устройств</li>
+      <li>✔ стабильное подключение</li>
+    </ul>
+    <a class="btn" href="#">Скачать VPN</a>
+  </div>
+
+  <div class="card">
+    <h2>VPN №2 — Бесплатный вариант</h2>
+    <p class="rating">★★★★☆ 8.7/10</p>
+    <p>Подходит для простого использования. Хороший вариант, чтобы попробовать VPN без оплаты.</p>
+    <ul>
+      <li>✔ есть бесплатный тариф</li>
+      <li>✔ простая установка</li>
+      <li>✔ подходит новичкам</li>
+    </ul>
+    <a class="btn" href="#">Попробовать бесплатно</a>
+  </div>
+
+  <div class="card">
+    <h2>VPN №3 — Для телефона</h2>
+    <p class="rating">★★★★☆ 8.5/10</p>
+    <p>Удобный вариант для Android и iPhone. Быстро устанавливается и легко подключается.</p>
+    <ul>
+      <li>✔ Android и iPhone</li>
+      <li>✔ простой интерфейс</li>
+      <li>✔ быстрое подключение</li>
+    </ul>
+    <a class="btn" href="#">Установить VPN</a>
+  </div>
+
+  <div class="info">
+    <h2>Сравнение VPN</h2>
+    <table class="table">
+      <tr>
+        <th>VPN</th>
+        <th>Для чего подходит</th>
+        <th>Цена</th>
+        <th>Оценка</th>
+      </tr>
+      <tr>
+        <td>VPN №1</td>
+        <td>Работа и скорость</td>
+        <td>Платный</td>
+        <td>9.8</td>
+      </tr>
+      <tr>
+        <td>VPN №2</td>
+        <td>Бесплатный старт</td>
+        <td>Бесплатный</td>
+        <td>8.7</td>
+      </tr>
+      <tr>
+        <td>VPN №3</td>
+        <td>Телефон</td>
+        <td>Платный</td>
+        <td>8.5</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="info">
+    <h2>Зачем нужен VPN</h2>
+    <p>
+      VPN помогает защитить личные данные, повысить безопасность подключения и использовать интернет более свободно.
+      Особенно полезен при работе через общественный Wi-Fi, на телефоне и при доступе к важным сервисам.
+    </p>
+  </div>
+
+  <div class="info">
+    <h2>Что такое VPN простыми словами</h2>
+    <p>
+      VPN — это сервис, который создаёт защищённое соединение между вашим устройством и интернетом.
+      Благодаря этому ваши данные лучше защищены, а IP-адрес скрывается.
+    </p>
+  </div>
+
+  <div class="info">
+    <h2>Важно</h2>
+    <p class="note">
+      Этот сайт является информационным обзором. Мы не предоставляем VPN-услуги напрямую,
+      а публикуем подборки и рекомендации по популярным сервисам.
+    </p>
+  </div>
+
 </div>
 
-<div class="card">
-<h2>VPN №2 — Бесплатный вариант</h2>
-<p class="rating">★★★★☆ 8.7/10</p>
-<p>Хороший вариант для простого использования без оплаты.</p>
+<footer>
+  © 2026 Информационный сайт о VPN-сервисах
+</footer>
 
-<ul>
-<li>✔ бесплатный тариф</li>
-<li>✔ простая установка</li>
-<li>✔ подходит для новичков</li>
-</ul>
-
-<a class="btn" href="#">Попробовать</a>
-</div>
-
-<div class="card">
-<h2>VPN №3 — Для телефона</h2>
-<p class="rating">★★★★☆ 8.5/10</p>
-<p>Удобный VPN для Android и iPhone.</p>
-
-<ul>
-<li>✔ быстрое подключение</li>
-<li>✔ простой интерфейс</li>
-<li>✔ работает стабильно</li>
-</ul>
-
-<a class="btn" href="#">Установить</a>
-</div>
-
-<div class="info">
-<h2>Сравнение VPN</h2>
-
-<table class="table">
-<tr>
-<th>VPN</th>
-<th>Скорость</th>
-<th>Цена</th>
-<th>Оценка</th>
-</tr>
-<tr>
-<td>VPN №1</td>
-<td>Очень высокая</td>
-<td>Платный</td>
-<td>9.8</td>
-</tr>
-<tr>
-<td>VPN №2</td>
-<td>Средняя</td>
-<td>Бесплатный</td>
-<td>8.7</td>
-</tr>
-<tr>
-<td>VPN №3</td>
-<td>Высокая</td>
-<td>Платный</td>
-<td>8.5</td>
-</tr>
-</table>
-</div>
-
-<div class="info">
-<h2>Что такое VPN?</h2>
-<p>VPN — это сервис, который защищает интернет-соединение и помогает получать доступ к сайтам. Он шифрует данные и скрывает IP-адрес пользователя.</p>
-</div>
-
-<div class="info">
-<h2>Важно</h2>
-<p>Этот сайт является информационным. Мы не предоставляем VPN услуги, а только делаем обзор сервисов.</p>
-</div>
-
-</div>
-
+</body>
+</html>
 <footer>
 © 2026 Информационный сайт о VPN
 </footer>
