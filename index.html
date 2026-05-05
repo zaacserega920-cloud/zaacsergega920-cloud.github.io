@@ -3,52 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Лучшие VPN 2026</title>
+<title>Лучшие VPN 2026 — обзор и сравнение</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6fb;
-  color: #111827;
+  background: #eef4ff;
+  color: #0f172a;
 }
 
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #ff7a18, #ff3d3d);
+a {
+  color: #2563eb;
+}
+
+.topbar {
+  background: white;
+  padding: 16px 24px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  color: #1d4ed8;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 18px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
   color: white;
+  padding: 80px 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 42px;
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 30px;
+  align-items: center;
 }
 
-header p {
-  font-size: 18px;
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 18px;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 19px;
+  color: #dbeafe;
+  line-height: 1.6;
+}
+
+.hero-box {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.hero-box h3 {
+  margin-top: 0;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 30px 20px;
+  padding: 36px 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 18px;
 }
 
 .info, .card {
   background: white;
   padding: 28px;
-  border-radius: 18px;
+  border-radius: 22px;
   margin-bottom: 24px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 28px rgba(15,23,42,0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
 
 .card {
-  border-left: 6px solid #ff3d3d;
+  border-top: 6px solid #2563eb;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
 .rating {
-  color: #ff9800;
+  color: #f59e0b;
   font-weight: bold;
   font-size: 18px;
 }
@@ -56,65 +142,152 @@ header p {
 .btn {
   display: inline-block;
   padding: 14px 24px;
-  background: #ff3d3d;
+  background: #2563eb;
   color: white;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 14px;
   margin-top: 12px;
   font-weight: bold;
+  box-shadow: 0 8px 18px rgba(37,99,235,0.25);
 }
 
 .btn:hover {
-  background: #d92d2d;
+  background: #1d4ed8;
 }
 
 ul {
-  line-height: 1.8;
+  line-height: 1.9;
+  padding-left: 22px;
+}
+
+.table-wrap {
+  overflow-x: auto;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  min-width: 650px;
 }
 
 .table th {
-  background: #ff3d3d;
+  background: #2563eb;
   color: white;
 }
 
 .table th, .table td {
-  border: 1px solid #ddd;
-  padding: 12px;
+  border: 1px solid #dbeafe;
+  padding: 14px;
   text-align: center;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.article-link {
+  background: #f8fbff;
+  padding: 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #0f172a;
+  border: 1px solid #dbeafe;
+  font-weight: bold;
+}
+
+.article-link:hover {
+  border-color: #2563eb;
+  color: #2563eb;
 }
 
 .note {
   font-size: 14px;
-  color: #555;
+  color: #475569;
 }
 
 footer {
   text-align: center;
-  padding: 25px;
-  color: #666;
+  padding: 30px 20px;
+  color: #64748b;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .articles {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin: 10px 8px 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Лучшие VPN 2026</h1>
-  <p>Обзор надёжных VPN-сервисов для работы, защиты и доступа к сайтам</p>
-</header>
+<div class="topbar">
+  <div class="nav">
+    <div class="logo">VPN Guide</div>
+    <div>
+      <a href="#rating">Рейтинг</a>
+      <a href="#compare">Сравнение</a>
+      <a href="#articles">Статьи</a>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Лучшие VPN 2026</h1>
+      <p>
+        Большой обзор VPN-сервисов для работы, защиты данных, телефона и компьютера.
+        Сравниваем скорость, удобство, безопасность и доступность.
+      </p>
+      <a class="btn" href="#rating">Смотреть рейтинг</a>
+    </div>
+
+    <div class="hero-box">
+      <h3>Что есть на сайте?</h3>
+      <ul>
+        <li>Рейтинг VPN</li>
+        <li>Сравнение сервисов</li>
+        <li>Инструкции для Android, iPhone и ПК</li>
+        <li>Советы по безопасности</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <div class="container">
 
   <div class="info">
+    <h2>Кратко о выборе VPN</h2>
     <p>
-      В 2026 году VPN стал необходимостью: для работы, защиты данных и доступа к сайтам.
-      Мы собрали популярные варианты и сравнили их по скорости, стабильности, удобству и поддержке устройств.
+      Хороший VPN должен быть быстрым, стабильным, удобным и безопасным.
+      Для постоянного использования лучше выбирать сервисы с поддержкой разных устройств,
+      понятным приложением и хорошей скоростью подключения.
     </p>
   </div>
 
@@ -124,75 +297,87 @@ footer {
       <li>Скорость подключения</li>
       <li>Стабильность работы</li>
       <li>Простота установки</li>
-      <li>Поддержка Android, iPhone и Windows</li>
+      <li>Поддержка Android, iPhone, Windows и ПК</li>
       <li>Наличие бесплатного или пробного тарифа</li>
     </ul>
   </div>
 
-  <div class="card">
-    <h2>VPN №1 — Рекомендуем</h2>
-    <p class="rating">★★★★★ 9.8/10</p>
-    <p>Быстрый VPN для работы, просмотра сайтов и защиты соединения. Подходит для телефона и компьютера.</p>
-    <ul>
-      <li>✔ высокая скорость</li>
-      <li>✔ подходит для всех устройств</li>
-      <li>✔ стабильное подключение</li>
-    </ul>
-    <a class="btn" href="#">Скачать VPN</a>
+  <h2 class="section-title" id="rating">Рейтинг VPN</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <span class="badge">Рекомендуем</span>
+      <h2>VPN №1</h2>
+      <p class="rating">★★★★★ 9.8/10</p>
+      <p>Быстрый VPN для работы, просмотра сайтов и защиты соединения.</p>
+      <ul>
+        <li>✔ высокая скорость</li>
+        <li>✔ для телефона и ПК</li>
+        <li>✔ стабильное подключение</li>
+      </ul>
+      <a class="btn" href="#">Скачать VPN</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Бесплатный старт</span>
+      <h2>VPN №2</h2>
+      <p class="rating">★★★★☆ 8.7/10</p>
+      <p>Подходит для простого использования и первого знакомства с VPN.</p>
+      <ul>
+        <li>✔ есть бесплатный тариф</li>
+        <li>✔ простая установка</li>
+        <li>✔ подходит новичкам</li>
+      </ul>
+      <a class="btn" href="#">Попробовать</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Для телефона</span>
+      <h2>VPN №3</h2>
+      <p class="rating">★★★★☆ 8.5/10</p>
+      <p>Удобный вариант для Android и iPhone с быстрым подключением.</p>
+      <ul>
+        <li>✔ Android и iPhone</li>
+        <li>✔ простой интерфейс</li>
+        <li>✔ быстрое подключение</li>
+      </ul>
+      <a class="btn" href="#">Установить VPN</a>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>VPN №2 — Бесплатный вариант</h2>
-    <p class="rating">★★★★☆ 8.7/10</p>
-    <p>Подходит для простого использования. Хороший вариант, чтобы попробовать VPN без оплаты.</p>
-    <ul>
-      <li>✔ есть бесплатный тариф</li>
-      <li>✔ простая установка</li>
-      <li>✔ подходит новичкам</li>
-    </ul>
-    <a class="btn" href="#">Попробовать бесплатно</a>
-  </div>
-
-  <div class="card">
-    <h2>VPN №3 — Для телефона</h2>
-    <p class="rating">★★★★☆ 8.5/10</p>
-    <p>Удобный вариант для Android и iPhone. Быстро устанавливается и легко подключается.</p>
-    <ul>
-      <li>✔ Android и iPhone</li>
-      <li>✔ простой интерфейс</li>
-      <li>✔ быстрое подключение</li>
-    </ul>
-    <a class="btn" href="#">Установить VPN</a>
-  </div>
-
-  <div class="info">
+  <div class="info" id="compare">
     <h2>Сравнение VPN</h2>
-    <table class="table">
-      <tr>
-        <th>VPN</th>
-        <th>Для чего подходит</th>
-        <th>Цена</th>
-        <th>Оценка</th>
-      </tr>
-      <tr>
-        <td>VPN №1</td>
-        <td>Работа и скорость</td>
-        <td>Платный</td>
-        <td>9.8</td>
-      </tr>
-      <tr>
-        <td>VPN №2</td>
-        <td>Бесплатный старт</td>
-        <td>Бесплатный</td>
-        <td>8.7</td>
-      </tr>
-      <tr>
-        <td>VPN №3</td>
-        <td>Телефон</td>
-        <td>Платный</td>
-        <td>8.5</td>
-      </tr>
-    </table>
+
+    <div class="table-wrap">
+      <table class="table">
+        <tr>
+          <th>VPN</th>
+          <th>Для чего подходит</th>
+          <th>Цена</th>
+          <th>Оценка</th>
+        </tr>
+        <tr>
+          <td>VPN №1</td>
+          <td>Работа и скорость</td>
+          <td>Платный</td>
+          <td>9.8</td>
+        </tr>
+        <tr>
+          <td>VPN №2</td>
+          <td>Бесплатный старт</td>
+          <td>Бесплатный</td>
+          <td>8.7</td>
+        </tr>
+        <tr>
+          <td>VPN №3</td>
+          <td>Телефон</td>
+          <td>Платный</td>
+          <td>8.5</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <div class="info">
@@ -211,32 +396,34 @@ footer {
     </p>
   </div>
 
+  <div class="info" id="articles">
+    <h2>Полезные статьи</h2>
+
+    <div class="articles">
+      <a class="article-link" href="vpn-download.html">Как скачать VPN</a>
+      <a class="article-link" href="vpn-not-working.html">VPN не работает</a>
+      <a class="article-link" href="vpn-iphone.html">VPN для iPhone</a>
+      <a class="article-link" href="vpn-free.html">Бесплатный VPN</a>
+      <a class="article-link" href="vpn-pc.html">VPN для ПК</a>
+      <a class="article-link" href="vpn-safe.html">Безопасен ли VPN</a>
+      <a class="article-link" href="vpn-comparison.html">Сравнение VPN</a>
+      <a class="article-link" href="vpn-android.html">Лучший VPN для Android</a>
+      <a class="article-link" href="vpn-windows.html">VPN для Windows</a>
+    </div>
+  </div>
+
   <div class="info">
     <h2>Важно</h2>
     <p class="note">
       Этот сайт является информационным обзором. Мы не предоставляем VPN-услуги напрямую,
-      а публикуем подборки и рекомендации по популярным сервисам.
+      а публикуем подборки, сравнения и рекомендации по популярным сервисам.
     </p>
   </div>
 
-<div class="info">
-<h2>Полезные статьи</h2>
-<li><a href="vpn-download.html">Как скачать VPN</a></li>
-<li><a href="vpn-not-working.html">VPN не работает</a></li>
-<li><a href="vpn-iphone.html">VPN для iPhone</a></li>
-<li><a href="vpn-free.html">Бесплатный VPN</a></li>
-<li><a href="vpn-pc.html">VPN для ПК</a></li>
-<li><a href="vpn-safe.html">Безопасен ли VPN</a></li>
-<li><a href="vpn-comparison.html">Сравнение VPN</a></li>
-<li><a href="vpn-android.html">Лучший VPN для Android</a></li>
-</ul>
 </div>
-<footer>
-  © 2026 Информационный сайт о VPN-сервисах
 
-</body>
 <footer>
-© 2026 Информационный сайт о VPN
+  © 2026 VPN Guide — информационный сайт о VPN-сервисах
 </footer>
 
 </body>
